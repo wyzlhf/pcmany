@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <title>Camera</title>
+    <style>
+        #user-list>li {
+            font-size: 24px;
+        }
+        #videos-list{
+            display: flex;
+            flex-wrap: wrap
+        }
+        #video-local{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+<h1 id="user-id">用户名称</h1>
+<ul id="user-list">
+</ul>
+<div id="videos-list">
+    <video id="video-local" controls autoplay></video>
+
+    <div id="videos"></div>
+</div>
+
+
+<script src="//cdn.bootcdn.net/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+<script src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="camera.js"></script>
+</body>
+</html>
